@@ -1,9 +1,31 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Bitcoin</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content padding>
 
+  <ion-grid>
+    <ion-row justify-content-center margin-bottom>
+      <ion-img src="assets/imgs/bitcoin.svg"></ion-img>
+    </ion-row>
+    <ion-row justify-content-center>
+      <h1>BTC: GBP 7000</h1>
+      <p>The average price last week was: GBP 6000</p>
+    </ion-row>
+    <ion-row justify-content-center>
+      <button ion-button icon-only round outline>
+        <ion-icon name="refresh"></ion-icon>
+      </button>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
+
+<ion-footer>
+  <ion-item>
+    <ion-label>Select Currency</ion-label>
+    <ion-select value="GBP" ok-text="Okay" cancel-text="Dismiss">
+      <ion-select-option value="GBP">GBP</ion-select-option>
+      <ion-select-option value="USD">USD</ion-select-option>
+      <ion-select-option value="AUD">AUD</ion-select-option>
+      <ion-select-option value="EUR">EUR</ion-select-option>
+      <ion-select-option value="GBP">GBP</ion-select-option>
+      </ion-select>
+  </ion-item>
+</ion-footer>
